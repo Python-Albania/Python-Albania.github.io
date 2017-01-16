@@ -1,5 +1,5 @@
 # Site settings
-title: Project Pages
+title: Python Albania
 description: "An Integrated Scientific Blogging Template"
 url: "https://python-albania.github.io/"
 
@@ -7,7 +7,7 @@ url: "https://python-albania.github.io/"
 
 
 # Secondary Parameters
-baseurl: "/Python-Albania"
+baseurl: "/Python-Albania.github.io"
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
