@@ -6,7 +6,7 @@ header-img: "img/home-bg.jpg"
 ---
 
 
-<a href="https://python-albania.github.io/Event.github.io/"><img src= "{{ "/img/logos/Project-Pages-New-Logo.png " | prepend: site.baseurl }}" style="width: 40%; margin-left: 30%; margin-right: 20%;"></a>
+<img src= "{{ "/img/logos/Project-Pages-New-Logo.png " | prepend: site.baseurl }}" style="width: 40%; margin-left: 30%; margin-right: 20%;"></a>
 
 
 "Python Albania" is the first organization created specifically
