@@ -6,7 +6,7 @@ header-img: "img/home-bg.jpg"
 ---
 
 
-<img src= "{{ "/img/logos/Project-Pages-New-Logo.png " | prepend: site.baseurl }}" style="width: 40%; margin-left: 30%; margin-right: 20%;"></a>
+<img src= "{{ "/img/logos/Project-Pages-New-Logo.png " | prepend: site.baseurl }}" style="width: 40%; margin-left: 30%; margin-right: 20%;">
 
 
 "Python Albania" is the first organization created specifically
