@@ -65,7 +65,8 @@ while position < len(List) and not found:
 </br>
 
 # Binary Search
-## What is Binary Search 
+
+## What is Binary Search
 
 The binary search is used to find an item in a ordered list.
 Let's say we want to find a number in the list below:
