@@ -4,7 +4,7 @@ title:     Algorithms And Data Structure
 author:     Geraldo Braho
 tags: 		Python Algorithm  Data Structure
 subtitle:  	A Brief review of sorting and searching in Python
-category:  project1
+category:  
 ---
 <!-- Start Writing Below in Markdown -->
 
