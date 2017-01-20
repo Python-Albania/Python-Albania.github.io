@@ -63,7 +63,10 @@ while position < len(List) and not found:
 3. Add the Functionality to add an item to the list if not found.
 
 
+</br>
 
+
+</br>
 
 # Binary Search
 
