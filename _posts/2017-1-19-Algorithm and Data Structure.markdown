@@ -2,7 +2,7 @@
 layout:     post
 title:     Algorithms And Data Structure
 author:     Geraldo Braho
-tags: 		post template
+tags: 		Python Algorithm  Data Structure
 subtitle:  	A Brief review of sorting and searching in Python
 category:  project1
 ---
