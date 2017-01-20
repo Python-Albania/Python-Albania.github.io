@@ -3,7 +3,7 @@ layout:     post
 title:     Algorithms And Data Structure
 author:     Geraldo Braho
 tags: 		post template
-subtitle:  	A Brief review of sorting and searching in Python 
+subtitle:  	A Brief review of sorting and searching in Python
 category:  project1
 ---
 <!-- Start Writing Below in Markdown -->
@@ -65,7 +65,7 @@ while position < len(List) and not found:
 
 
 
-## Binary Search
+# Binary Search
 
 The binary search is used to find an item in a ordered list.
 Let's say we want to find a number in the list below:
