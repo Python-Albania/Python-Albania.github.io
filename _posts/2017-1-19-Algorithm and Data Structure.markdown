@@ -59,14 +59,14 @@ while position < len(List) and not found:
 3. Add the Functionality to add an item to the list if not found.
 
 
-</br>
+<br>
 
 
-</br>
+<br>
 
 # Binary Search
 
-## What is Binary Search
+
 
 The binary search is used to find an item in a ordered list.
 Let's say we want to find a number in the list below:
@@ -76,6 +76,9 @@ Let's say we want to find a number in the list below:
 1 , 2,4,6,8,20,28,31,34,50
 
 {% endhighlight %}
+
+
+## What is Binary Search
 
 To search for an item , we look in the middle of list and check if the number we want is in the middle, above the middle or below the middle.If it is in the middle, you have found the item. If it is higher than the middle value, then we adjust the bottom of the list so we can search in a smaller starting point of the list.If the number is lower than the middle value then we adjust the top of the list so that we can search in a smaller list which has it highest position one less then the middle position.
 
