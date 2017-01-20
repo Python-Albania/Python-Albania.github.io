@@ -5,6 +5,8 @@ author:     Geraldo Braho
 tags: 		Python Algorithm  Data Structure
 subtitle:  	A Brief review of sorting and searching in Python
 category:  
+share: true
+comments: true
 ---
 <!-- Start Writing Below in Markdown -->
 
@@ -44,13 +46,13 @@ while position < len(List) and not found:
 {% endhighlight %}
 
 
-
+<br>
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gf1G1tLkOas" frameborder="0" allowfullscreen></iframe>
 
 
-
+<br>
 
 ## Exercise 1
 
@@ -106,14 +108,18 @@ while not Found and first <= top
 
 {% endhighlight %}
 
-
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iIU91HCXnpo" frameborder="0" allowfullscreen></iframe>
 
 
 
-
+<br>
 
 ## Exercise 2
 
 1. Implement the binary search as shown in the video and test it if it works.
 2. Add a counter to report how many searches have been done for each item searched for.
+
+
+<br>
+<br>
