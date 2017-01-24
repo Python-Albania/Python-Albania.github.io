@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     Welcome to Bash Programming 
+title:     Welcome to Bash Programming
 author:     Geraldo Braho
 tags: 		Bash
 subtitle:  	A Introduction to bash Language( My notes from my programming language class)
@@ -94,4 +94,4 @@ echo ${VARIABLE_1} "Nice to be starting learning Bash"
 {% endhighlight %}
 
 
-***Output : Hello World Nice to be starting learning Bash
+***Output : Hello World Nice to be starting learning Bash***
