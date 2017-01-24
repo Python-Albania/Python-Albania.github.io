@@ -97,12 +97,14 @@ echo ${VARIABLE_1} "Nice to be starting learning Bash"
 ***Output : Hello World Nice to be starting learning Bash***
 
 ***Note:*** Variables in Bash are case-sensitive.
+
+
 ## Valid variable names:**
 * FIRST3LETTERS="ABC"
 * FIRST_THREE_LETTERS="ABC"
 * firstThreeLetters="ABC"
 
-## Invalid variable names:**
+## Invalid variable names:
 
 * 3LETTERS="ABC"
 * first-three-letters="ABC"
