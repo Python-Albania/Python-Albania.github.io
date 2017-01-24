@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     Algorithms And Data Structure
+title:     Welcome to Bash Programming 
 author:     Geraldo Braho
 tags: 		Bash
 subtitle:  	A Introduction to bash Language( My notes from my programming language class)
