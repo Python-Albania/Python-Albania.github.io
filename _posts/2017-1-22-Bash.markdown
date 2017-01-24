@@ -1,0 +1,97 @@
+---
+layout:     post
+title:     Algorithms And Data Structure
+author:     Geraldo Braho
+tags: 		Bash
+subtitle:  	A Introduction to bash Language( My notes from my programming language class)
+category:  
+share: true
+comments: true
+---
+<!-- Start Writing Below in Markdown -->
+
+# Table of Contents
+
+* TOC
+{:toc}
+
+
+
+
+
+# What is Bash Language
+
+BASH is an acronym for Bourne Again Shell. It is based on the Bourne shell and is mostly compatible with its features.
+
+Shells are command interpreters. They are applications that provide users with the ability to give commands to their operating system interactively, or to execute batches of commands quickly. In no way are they required for the execution of programs; they are merely a layer between system function calls and the user.
+
+Think of a shell as a way for you to speak to your system. Your system doesn't need it for most of its work, but it is an excellent interface between you and what your system can offer. It allows you to perform basic math, run basic tests and execute applications. More importantly, it allows you to combine these operations and connect applications to each other to perform complex and automated tasks.
+
+BASH is not your operating system. It is not your window manager. It is not your terminal (but it often runs inside your terminal). It does not control your mouse or keyboard. It does not configure your system, activate your screensaver, or open your files when you double-click them. It is generally not involved in launching applications from your window manager or desktop environment. It's important to understand that BASH is only an interface for you to execute statements (using BASH syntax), either at the interactive BASH prompt or via BASH scripts.
+
+
+These are algorithms that students are expected to understand  for A- Level Computing. It is very useful to be able to implement them in a programing language to understand more fully how they work.
+
+
+
+# Introduction
+
+To run bash scripts we can just easily run our terminal and start writing the script we want to run.
+To print the famous "Hello World" in bash we just easily type:
+
+
+{% highlight BASH %}
+
+echo "Hello World"
+
+{% endhighlight %}
+
+***Output : Hello Word***
+
+
+
+
+It is not necessary to use the the quotation marks in Bash but since I am used to other languages as well I like to use it in Bash too:
+
+
+
+{% highlight BASH %}
+
+echo "Hello World"
+
+{% endhighlight %}
+
+***Output : Hello Word***
+
+
+
+Creating Variables in Bash is easy too. We can Create Variables like:
+
+{% highlight BASH %}
+
+VARIABLE_1="Hello World"
+
+echo $VARIABLE_1
+
+
+{% endhighlight %}
+
+***Output: Hello World***
+
+
+To call out VARIABLE_1 that we just created in out print statement we should make sure that we use the **$** before the variable.
+Also we can add additional variables or string to the variable that we just created by using the **{ }**:
+
+
+
+{% highlight BASH %}
+
+VARIABLE_1="Hello World"
+
+echo ${VARIABLE_1} "Nice to be starting learning Bash"
+
+
+{% endhighlight %}
+
+
+***Output : Hello World Nice to be starting learning Bash
