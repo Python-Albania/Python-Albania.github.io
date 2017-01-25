@@ -112,6 +112,57 @@ echo ${VARIABLE_1} "Nice to be starting learning Bash"
 
 
 
+## If Statement in Bash:
+
+Here is a model to show you  how to run statements in Bash Language:
+
+
+{% highlight BASH %}
+
+if [ condition -is-true ]
+then
+     command 1
+     command 2
+     command N
+fi
+
+{% endhighlight
+
+So as we see, even in Bash as in other programing languages the statement starts with "if", then we give the condition like **(2=2)** . After writing the condition notice that we write **then**. The **then** word here all what it does is like saying " Okay since i got the condition now let's do this". Remember:
+1. we give the condition
+2. write **then** to tell that we are done with the condition, and based on condition we will do this, which can be ( Increment , decrement ect).
+
+After writing the commands notice that also the loop finishes with **fi** What does this *fi* do ? So basically **fi** stands for if but backwards. The way how I  understood is "Okay .. we are finish with this statement so lest close it ". So, **fi** at the ends just closes that operation in our case its closes the "if statement"
+
+**Example**
+
+
+
+{% highlight BASH %}
+
+MY_NAME="Geraldo"
+if [ "$MY_NAME" = "Geraldo" ]
+then
+    echo "Hello Geraldo :)  You seem to like Bash Language."
+
+fi
+
+{% endhighlight
+
+
+Also make sure that after the **[]** make sure you leave one space between the brackets & quotation marks otherwise you will get an error like this :
+
+{% highlight BASH %}
+
+bash: [: missing ']'
+
+{% endhighlight 
+
+
+ **Output:** Hello Geraldo :)  You seem to like Bash Language.
+
+
+
 ## Exercise 1 (Solve me First From Hackerrank)
 
 Welcome to HackerRank! The purpose of this challenge is to familiarize you with reading input from stdin (the standard input stream) and writing output to stdout (the standard output stream) using our environment.
