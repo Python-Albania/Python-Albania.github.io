@@ -144,6 +144,7 @@ After writing the commands notice that also the loop finishes with **fi** What d
 
 MY_NAME="Geraldo"
 if [ "$MY_NAME" = "Geraldo" ]
+
 then
     echo "Hello Geraldo :)  You seem to like Bash Language."
 
