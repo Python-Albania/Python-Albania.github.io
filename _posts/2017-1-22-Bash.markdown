@@ -128,7 +128,9 @@ fi
 
 {% endhighlight %}
 
-So as we see, even in Bash as in other programing languages the statement starts with "if", then we give the condition like **(2=2)** . After writing the condition notice that we write **then**. The **then** word here all what it does is like saying " Okay since i got the condition now let's do this". Remember:
+So as we see, even in Bash as in other programing languages the statement starts with "if", then we give the condition like **(2=2)** . After writing the condition notice that we write **then**. The **then** word here all what it does is like saying " Okay since i got the condition now let's do this".
+*Remember:*
+
 1. we give the condition
 2. write **then** to tell that we are done with the condition, and based on condition we will do this, which can be ( Increment , decrement ect).
 
