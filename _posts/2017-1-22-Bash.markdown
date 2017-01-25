@@ -137,7 +137,6 @@ After writing the commands notice that also the loop finishes with **fi** What d
 **Example**
 
 
-
 {% highlight BASH %}
 
 MY_NAME="Geraldo"
