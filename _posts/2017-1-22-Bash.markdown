@@ -155,7 +155,7 @@ Also make sure that after the **[]** make sure you leave one space between the b
 
 bash: [: missing ']'
 
-{% endhighlight}
+{% endhighlight %}
 
 
  **Output:** Hello Geraldo :)  You seem to like Bash Language.
