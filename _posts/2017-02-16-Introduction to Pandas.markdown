@@ -8,6 +8,7 @@ subtitle:  	A Introduction to Pandas( My notes from my Data Mining class)
 
 tags: [pandas,python,data mining]
 share: true
+author: Geraldo Braho
 comments: true
 image:
   feature:
