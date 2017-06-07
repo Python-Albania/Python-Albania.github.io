@@ -89,7 +89,7 @@ When the allocated web address is entered in the web browser, webpage containing
 
 In the first module, we have successfully achieved the mobility of robot via internet. This module describes controlling the robot using Bluetooth. Here we have used a Bluetooth module connected to the Arduino board which is encrypted by a MAC address. We have created an android applet with java which communicates serially with the Arduino board. By entering the allocated MAC address of the Bluetooth module, the connection between Arduino board and android phone is achieved. Controlling the direction of motion of robot is achieved by tapping the specific icon on the android phone.
 
-![Block Diagram of Bluetooth enabled robot](/img/robosmart/1.png)
+![Block Diagram of Bluetooth enabled robot](/img/robosmart/2.png)
 
 
 # System Description:
