@@ -5,7 +5,7 @@ author: Geraldo Braho
 tags: 		
 subtitle: My senior design project
 category: project1
-visualworkflow: true
+
 ---
 {% if page.visualworkflow == true %}
    {% include workflowmatlab.html %}
