@@ -1,10 +1,10 @@
 ---
-layout:     post
-title:      RoboSmart
-author:     Geraldo Braho
+layout: post
+title: RoboSmart
+author: Geraldo Braho
 tags: 		
-subtitle:   - My senior design project
-category:  project1
+subtitle: My senior design project
+category: project1
 visualworkflow: true
 ---
 {% if page.visualworkflow == true %}
