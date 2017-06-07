@@ -119,7 +119,7 @@ The system has two parts, namely; hardware and software. The hardware architectu
    - 2x bare-ended wires to go from the Motor Module to Sensor Shield
    - 3x wires for the servo motor with female end attaching to Sensor Shield (should already be included with the servo motor)
    - 2x bare-ended wires to go from AA Battery enclosure to the motor Module (should already be included with the battery enclosure)
-11.	Arduino IDE software – free at [http://www.arduino.cc)](http://www.arduino.cc)
+11.	Arduino IDE software – free at [http://www.arduino.cc](http://www.arduino.cc)
 12.	1x USB cable (A male plug to B male plug)
 13.	A computer to program with.
 
@@ -177,7 +177,7 @@ Using a desktop PC with:
 # How to install Ubuntu Server:  
 ## Step 1: Creating a new virtual machine in virtualbox:
 This step explain how to set up a new virtual machine to host Ubuntu Server. Below is a step-by-step guide:
-- Download and install Oracle VirtualBox from https://www.virtualbox.org/wiki/Downloads.
+- Download and install Oracle VirtualBox from [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads).
 - Open VirtualBox. Then click “New” button to create new virtual Machine.
 - Give a name to the virtual machine.
 - Select Type as “Linux” and version “Ubuntu (64 bit)”.
@@ -191,8 +191,8 @@ This step explain how to set up a new virtual machine to host Ubuntu Server. Bel
 ## Step 2: Installing ubuntu Server 16.10 inside VirtualBox virtual machine.
 
 Installing the operating system inside a virtual machine is almost the same as installing it on a real hard disk, follow the next steps to complete the installation.
-- Download Ubuntu server 16.10 ISO from http://www.ubuntu.com/download/server.
-- Download Ubuntu server 12.04 LTS ISO from http://www.ubuntu.com/download/server.
+- Download Ubuntu server 16.10 ISO from [http://www.ubuntu.com/download/server](http://www.ubuntu.com/download/server).
+- Download Ubuntu server 12.04 LTS ISO from [http://www.ubuntu.com/download/server](http://www.ubuntu.com/download/server).
 - Power on the VM and select “Choose a virtual CD/DVD disk file” from “Devices->CD/DVD Devices”.
 - Attach the download ISO to the VM and reset the VM from “Machine->Reset”.
 - VM will boot with the attached ISO. Select “English” as language.
@@ -257,13 +257,14 @@ Another enhancement could be powering the robot with solar cells for longer dura
 
 # References
 
-Arduino – ArduinoBoardUno  (n.d.). Retrieved May 4, 2017 from https://www.arduino.cc/en/main/arduinoBoardUno
-Arduino UNO WiFi. (n.d.). Retrieved May 04, 2017, from http://www.arduino.org/products/boards/arduino-uno-wifi
-Atmega328/P“ (n.d.). Retrieved May 04, 2017, from http://www.atmel.com
-Hisham,, M., Prabhu, S., & Kumar, A. A Wi-Fi Enabled Robot. Manipal Centre For Information Sciences. Retrieved from http://manipal.net/mdn/tech_papers/iee_wifi_enable_robot.pdf
+Arduino – ArduinoBoardUno  (n.d.). Retrieved May 4, 2017 from [https://www.arduino.cc/en/main/arduinoBoardUno](https://www.arduino.cc/en/main/arduinoBoardUno)
+Arduino UNO WiFi. (n.d.). Retrieved May 04, 2017, from [http://www.arduino.org/products/boards/arduino-uno-wifi](http://www.arduino.org/products/boards/arduino-uno-wifi)
+Atmega328/P“ (n.d.). Retrieved May 04, 2017, from [http://www.atmel.com](http://www.atmel.com)
+Hisham,, M., Prabhu, S., & Kumar, A. A Wi-Fi Enabled Robot. Manipal Centre For Information Sciences. Retrieved from [http://manipal.net/mdn/tech_papers/iee_wifi_enable_robot.pdf](http://manipal.net/mdn/tech_papers/iee_wifi_enable_robot.pdf)
 Pavan, C., & Sivakumar, B. (2012). Wi-Fi ROBOT FOR VIDEO MONITORING & SURVEILLANCE SYSTEM. International Journal Of Scientific & Engineering Research, 3(2229-5518).
- 	Rosebrock, A. “Common Errors Using The Raspberry Pi Camera Module - Pyimagesearch”. PyImageSearch. Retrieved May 05, 2017 from http://www.pyimagesearch.com/2016/08/29/common-errors-using-the-raspberry-pi-camera-module/
-Rosebrock, A. “Accessing the Raspberry Pi Camera with OpenCV and Python” - PyImageSearch. PyImageSearch. Retrieved May 05, 2017, from http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/
+ 	Rosebrock, A. “Common Errors Using The Raspberry Pi Camera Module - Pyimagesearch”. PyImageSearch. Retrieved May 05, 2017 from [http://www.pyimagesearch.com/2016/08/29/common-errors-using-the-raspberry-pi-camera-module/](http://www.pyimagesearch.com/2016/08/29/common-errors-using-the-raspberry-pi-camera-module/)
+Rosebrock, A. “Accessing the Raspberry Pi Camera with OpenCV and Python” - PyImageSearch. PyImageSearch. Retrieved May 05, 2017, from [http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/](http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/)
+
 
 
 
