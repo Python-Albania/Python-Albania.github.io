@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Predictive Model
+title: Esemble  Modeling
 author: Geraldo Braho
 tags: 		
 subtitle: Blood Transfusion Service Center
 category: project1
 visualworkflow: false
 ---
+
 
 
 COMP 4353 Data Mining  
@@ -19,14 +20,13 @@ Geraldo Braho
 
 
 
-
-## Project: Predictive Model
+## Project: Ensemble Modeling
 
 # <center> Blood Transfusion Service Center </center>
 
 ## Problem
 
-This is a workflow for building a predictive model (classification) to determine whether the donors donated blood during the certain time.
+This is a workflow for building an ensemble model (classification) to determine whether the donors donated blood during the certain time.
 The order of this listing corresponds to the order of numerals along the rows of
 the database.
 
@@ -58,11 +58,12 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
 ```
 
 
 ```python
-dataSet = pandas.read_csv("KNN_PredictiveModel.csv");
+dataSet = pandas.read_csv("Team_EnsModel.csv");
 dataSet.columns = [['recency', 'frequency', 'monetary_blood', 'time', 'class']]
 ```
 
@@ -323,11 +324,9 @@ plt.show()
 
 
 ```python
-
 # histograms
 dataset.hist(figsize=(18,16))
 plt.show()
-
 ```
 
 
@@ -894,10 +893,11 @@ scoring = 'accuracy'
 models = []
 # models.append(('LR', LogisticRegression()))
 # models.append(('LDA', LinearDiscriminantAnalysis()))
-models.append(('KNN', KNeighborsClassifier()))
+# models.append(('KNN', KNeighborsClassifier()))
 # models.append(('CART', DecisionTreeClassifier()))
 # models.append(('NB', GaussianNB()))
 # models.append(('SVM', SVC()))
+models.append(('RandomForest', RandomForestClassifier()))
 # evaluate each model in turn
 results = []
 names = []
@@ -910,7 +910,7 @@ for name, model in models:
     print(msg)
 ```
 
-    KNN: 0.779790 (0.044200)
+    RandomForest: 0.745392 (0.056498)
 
 
 
@@ -929,9 +929,9 @@ for name, model in models:
 
 ```python
 # Make predictions on train dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(train_scaled)
+randomForest = RandomForestClassifier()
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(train_scaled)
 # print(accuracy_score(Y_train, predictions))
 print(confusion_matrix(Y_train, predictions))
 ```
@@ -945,15 +945,15 @@ print(confusion_matrix(Y_train, predictions))
 
 ```python
 # Make predictions on test dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_test)
+randomForest = RandomForestClassifier()
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(X_test)
 # print(accuracy_score(Y_test, predictions))
 print(confusion_matrix(Y_test, predictions))
 ```
 
-    [[154  10]
-     [ 43  18]]
+    [[145  19]
+     [ 39  22]]
 
 
 ## Step 8 - Model Performance
@@ -962,9 +962,9 @@ print(confusion_matrix(Y_test, predictions))
 ```python
 # Training Performance
 # Make predictions on train dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(train_scaled)
+randomForest = RandomForestClassifier()
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(train_scaled)
 print(accuracy_score(Y_train, predictions))
 # print(classification_report(Y_train, predictions))
 ```
@@ -976,14 +976,14 @@ print(accuracy_score(Y_train, predictions))
 ```python
 # Testing Performance
 # Make predictions on test dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_test)
+randomForest = RandomForestClassifier()
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(X_test)
 print(accuracy_score(Y_test, predictions))
 # print(classification_report(Y_test, predictions))
 ```
 
-    0.764444444444
+    0.728888888889
 
 
 * Which one (Training or Testing performance) is better, is there an overfitting case, why ?.
@@ -1007,7 +1007,7 @@ In order to determined if I would productionize this model, I would have to scal
 models = []
 # models.append(('LR', LogisticRegression()))
 # models.append(('LDA', LinearDiscriminantAnalysis()))
-models.append(('KNN', KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)))
+models.append(('RandomForest', RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)))
 # models.append(('CART', DecisionTreeClassifier()))
 # models.append(('NB', GaussianNB()))
 # models.append(('SVM', SVC()))
@@ -1023,15 +1023,15 @@ for name, model in models:
     print(msg)
 ```
 
-    KNN: 0.789405 (0.049755)
+    RandomForest: 0.772097 (0.050413)
 
 
 
 ```python
 # Make predictions on train dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(train_scaled)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(train_scaled)
 # print(accuracy_score(Y_train, predictions))
 print(confusion_matrix(Y_train, predictions))
 # print(classification_report(Y_train, predictions))
@@ -1044,25 +1044,25 @@ print(confusion_matrix(Y_train, predictions))
 
 ```python
 # Make predictions on test dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_test)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(X_test)
 # print(accuracy_score(Y_test, predictions))
 print(confusion_matrix(Y_test, predictions))
 # print(classification_report(Y_test, predictions))
 ```
 
-    [[164   0]
-     [ 61   0]]
+    [[163   1]
+     [ 58   3]]
 
 
 
 ```python
 # Training Performance
 # Make predictions on train dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(train_scaled)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(train_scaled)
 print(accuracy_score(Y_train, predictions))
 # print(confusion_matrix(Y_train, predictions))
 # print(classification_report(Y_train, predictions))
@@ -1075,15 +1075,15 @@ print(accuracy_score(Y_train, predictions))
 ```python
 # Testing Performance
 # Make predictions on test dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_test)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(X_test)
 print(accuracy_score(Y_test, predictions))
 # print(confusion_matrix(Y_test, predictions))
 # print(classification_report(Y_test, predictions))
 ```
 
-    0.728888888889
+    0.737777777778
 
 
 * Did you get a better performance on Training or Test set?
@@ -1099,9 +1099,9 @@ And we go the same performance as previously. The reason for so could be that we
 ```python
 # Training Performance
 # Make predictions on train dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(train_scaled)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(train_scaled)
 print(accuracy_score(Y_train, predictions))
 # print(confusion_matrix(Y_train, predictions))
 print(roc_auc_score(Y_train, predictions))
@@ -1127,9 +1127,9 @@ print(classification_report(Y_train, predictions))
 ```python
 # Testing Performance
 # Make predictions on test dataset
-knn = KNeighborsClassifier(n_neighbors=40, algorithm='ball_tree', leaf_size=50)
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_test)
+randomForest = RandomForestClassifier(n_estimators=5, max_depth=2, max_features='sqrt', n_jobs=-1, warm_start=True)
+randomForest.fit(X_train, Y_train)
+predictions = randomForest.predict(X_test)
 print(accuracy_score(Y_test, predictions))
 print(roc_auc_score(Y_test, predictions))
 # print(confusion_matrix(Y_test, predictions))
