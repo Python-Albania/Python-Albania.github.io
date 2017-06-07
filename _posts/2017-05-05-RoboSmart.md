@@ -22,7 +22,7 @@ To make changes, update the MATLAB code and republish this document.
 * TOC
 {:toc}
 
-![Description](/img/_logo.png)
+![Description](/img/logo.png)
 
 
 # Abstract:
