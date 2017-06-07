@@ -1,12 +1,12 @@
 # Members
 
-- name: 'Geraldo Braho'
-  role: 'Founder'
+- name: Geraldo Braho
+  role: Founder
   img: '/img/geraldo.jpg'
-  github: 'geraldo1993'
+  github: geraldo1993
   gplus:
-  bio: 'As a Software Engineering major, graduated from North American University, I'm fascinated by the invisible power that computer science has. Currently, I'm researching about Brain-Computer Interface (BCI) and always curious to figure out that how nice is to combine Computer Science and NeuroScience together.
-        I've taken many computer classes so the knowledge I got from those classes I would love to implement that knowledge to make this world a better place.'
+  bio: As a Software Engineering major, graduated from North American University, I'm fascinated by the invisible power that computer science has. Currently, I'm researching about Brain-Computer Interface (BCI) and always curious to figure out that how nice is to combine Computer Science and NeuroScience together.
+        I've taken many computer classes so the knowledge I got from those classes I would love to implement that knowledge to make this world a better place.
   url:
   visible: true
 
