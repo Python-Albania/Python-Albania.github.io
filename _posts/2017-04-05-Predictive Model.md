@@ -318,7 +318,7 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](img/output_16_0.png)
 
 
 
@@ -330,7 +330,7 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](img/output_17_0.png)
 
 
 
@@ -341,7 +341,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](img/output_18_0.png)
 
 
 ## Step 2 - Train Test Split
@@ -1155,18 +1155,3 @@ print(classification_report(Y_test, predictions))
 Neglecting the fact that we have a big class imbalance within our data set, the "AUC" error metric would the best one for our modeling. Because Area Under the ROC Curve is known as an error metric for binary classification. And since in our problem we have two classes, it is considered as binary classification as well.
 
 If we deploy one of the above mentioned methods for resolving the class imbalance issue, we could maybe see the better performance of our model.
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
