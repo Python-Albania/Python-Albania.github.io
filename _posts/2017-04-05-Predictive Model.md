@@ -318,7 +318,7 @@ plt.show()
 ```
 
 
-![png](img/output_16_0.png)
+![png](/img/output_16_0.png)
 
 
 
@@ -327,10 +327,11 @@ plt.show()
 # histograms
 dataset.hist(figsize=(18,16))
 plt.show()
+
 ```
 
 
-![png](img/output_17_0.png)
+![png](/img/output_17_0.png)
 
 
 
@@ -341,7 +342,7 @@ plt.show()
 ```
 
 
-![png](img/output_18_0.png)
+![png](/img/output_18_0.png)
 
 
 ## Step 2 - Train Test Split
