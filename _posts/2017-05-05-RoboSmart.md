@@ -119,7 +119,7 @@ The system has two parts, namely; hardware and software. The hardware architectu
    - 2x bare-ended wires to go from the Motor Module to Sensor Shield
    - 3x wires for the servo motor with female end attaching to Sensor Shield (should already be included with the servo motor)
    - 2x bare-ended wires to go from AA Battery enclosure to the motor Module (should already be included with the battery enclosure)
-11.	Arduino IDE software – free at http://www.arduino.cc
+11.	Arduino IDE software – free at ![http://www.arduino.cc)](http://www.arduino.cc)
 12.	1x USB cable (A male plug to B male plug)
 13.	A computer to program with.
 
