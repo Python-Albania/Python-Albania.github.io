@@ -128,6 +128,10 @@ The system has two parts, namely; hardware and software. The hardware architectu
 
 # Assembling:
 
+## Video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zsYSi3lcXxE" frameborder="0" allowfullscreen></iframe>
+
+
 ## How to Connect the Wires:
 
 - Connect the red wire (voltage) from the battery enclosure to VCC on the L298N Motor Module.
